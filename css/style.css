@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* UTILY CLASS */
+
+/* --------------- */
+.nav-cmd{
+    width: 200px;
+    min-height: 900px;
+    background: black;
+}
+.explorer{
+    width:calc(100% - 200px);
+    background-color: red;
+    /* deb */
+    min-height: 900px;
+}
+.container{
+    display: flex;
+}
