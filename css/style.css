@@ -9,11 +9,9 @@ a{
     text-decoration: none;
     color: #7A7A7A;
 }
-/* DEBUG */
-h3{
-    color: aliceblue;
+.webapp{
+    display: flex;
 }
-
 /*  */
 nav{
     width: 200px;
@@ -83,8 +81,9 @@ nav a:hover{
 .footer-nav{
     color: #7A7A7A;
     line-height: 40px;
-    position: absolute;
-    bottom:  0;
+    background-color: black;
+    /* position: absolute;
+    bottom:0; */
 }
 #profilo{
     color: white;
@@ -104,5 +103,17 @@ nav a:hover{
     position: fixed;
     bottom: 0;
     /* display: none; */
-
+}
+.explorer{
+    display: ;
+    width:calc(100% - 200px);
+    background-color: #141922;
+    /* deb */
+    min-height: 900px;
+}
+.prova{
+    width: 400px;
+    height: 400px;
+    background: yellow;
+    border: 1px solid black;
 }
