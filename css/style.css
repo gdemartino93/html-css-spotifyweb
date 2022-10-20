@@ -78,11 +78,10 @@ nav h3{
 .link-nav-bar>a:hover img{
     filter: invert(0%);
 }
-.features{
-    height: 20%;
-}
 .listplaylist{
     overflow: auto;
+    line-height: 30px;
+    font-size: 13px;
     max-height: 200px;
 }
 .newplaylist{
@@ -99,10 +98,7 @@ nav h3{
 .features>a:hover .newplaylist{
     color: white;
 }
-.listplaylist{
-    line-height: 30px;
-    font-size: 13px;
-}
+
 .listplaylist a{
     color: #7A7A7A;
 }
@@ -111,14 +107,10 @@ nav a:hover{
 }
 .footer-nav{
     color: #7A7A7A;
-    line-height: 40px;
     background-color: black;
-    min-width: 100px;
-    position: absolute;
-    bottom: 0;
-    /* far funzionare l'hr widt 100% */
-    width: 100%;
+    line-height: 40px;
 }
+
 #profilo{
     color: white;
     font-weight: bold;
@@ -158,20 +150,57 @@ nav a:hover{
 }
 
 .container-explorer{
-    background-color:aqua ;
     width:calc(100vw - 200px);
     padding: 10px;
     margin-top: 80px;
     display: flex;
+    flex-direction: column;
+    /* background-color: antiquewhite; */
 }
 .prova{
-    width: 400px;
-    height: 400px;
+    width: calc(100% / 6 - 20px);
+    height: 200px;
     background: yellow;
     border: 1px solid black;
+    margin-top: 100px;
+    margin: 10px;
+}
+.explorer-nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: #7A7A7A;
+    font-weight: bold;
+    font-size: 15px;
+}
+.explorer-nav > a {
+    display: flex;
+    flex-direction: column;
+   }
+   
+.bordosotto{
+    background-color: red;
+    height: 1px;
+    width: 50%;
+    align-self: center;
+    display: none;
+}
+.explorer-nav>a:hover .bordosotto{
+    display: block;
 
 }
-
+.recenti{
+    background-color: green;
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+}
+h2{
+    font-weight: bold;
+    color: white;
+    padding-top: 20px;
+}
 @media screen and (max-width:700px) {
     nav{
         width: 50px;
