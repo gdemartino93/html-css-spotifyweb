@@ -28,7 +28,7 @@ hr{
     background:rgba(8, 11, 18, 0.7);
     border: 1px solid white;
     /* se rimane un tasto unico */
-    /* margin-right: 10px; */
+    margin-right: 20px;
   }
 
 /* NAV BAR ASIDE */
@@ -206,6 +206,7 @@ nav a:hover{
     font-size: 15px;
     height: 30px;
     align-items: center;
+    
 }
 .explorer-nav > a {
     display: flex;
@@ -243,8 +244,44 @@ h2{
     border-radius: 50%;
 }
 
+@media screen and (max-width:960px){
 
-@media screen and (max-width:700px) {
+.card{
+    /* width: calc(100% / 4 - 20px); */
+}
+.explorer-nav{
+    font-size: 10px;
+    gap: 10px;
+}
+
+@media screen and (max-width:811px) {
+    .card{
+        width: calc(100% / 4 - 20px);
+    }
+    .recenti{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+}
+@media screen and (max-width:650px) {
+
+    .explorer-nav{
+        gap: 8px;
+        font-size: 8px;
+    }
+ 
+    .card{
+        width: calc(100% / 3 - 20px);
+        margin: 10px;
+    }
+    .recenti{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:520px) {
     nav{
         width: 50px;
         align-items: center;
@@ -279,18 +316,31 @@ h2{
         width: calc(100vh - 50px);
         flex-grow: 1;
     }
+    .container-explorer>h2{
+        font-size: 1.2rem;
+    }
+    .explorer-nav{
+        gap: 12px;
+        justify-content: flex-start;
+        font-size: 0.5rem;
+    }
     .btn{
         padding: 10px;
     }
     .explorer{
         width:calc(100% - 50px);
-        height: 100%;
+        height: calc(100vh - 100px);
     }
     .header-explorer{
         background:rgba(8, 11, 18, 0.7);
         width: calc(100vw - 50px);
         height: 80px;
-
     }
-    
+    .card{
+        width: calc(100% / 2 - 70px);
+        margin: 10px;
+    }
+    .recenti{
+        flex-wrap: wrap;
+    }
 }
