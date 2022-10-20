@@ -25,11 +25,12 @@ nav{
     width: 200px;
     background: black;
     height: calc(100vh - 100px);
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    position: relative;
 }
 .nav-bar{
     display: flex;
@@ -63,6 +64,10 @@ nav{
 .features{
     height: 20%;
 }
+.listplaylist{
+    overflow: auto;
+    max-height: 200px;
+}
 .newplaylist{
     color: #7A7A7A;
     font-size: 18px;
@@ -91,6 +96,10 @@ nav a:hover{
     line-height: 40px;
     background-color: black;
     min-width: 100px;
+    position: absolute;
+    bottom: 0;
+    /* far funzionare l'hr widt 100% */
+    width: 100%;
 }
 #profilo{
     color: white;
@@ -109,7 +118,7 @@ nav a:hover{
     height: 100px;
     position: fixed;
     bottom: 0;
-    /* display: none; */
+    left: 0;
 }
 .explorer{
     display:flex;
@@ -120,9 +129,22 @@ nav a:hover{
     overflow: auto;
  
 }
+
+.container-explorer{
+    background-color:aqua ;
+    width: 100%;
+    padding: 10px;
+}
 .prova{
     width: 400px;
     height: 400px;
     background: yellow;
     border: 1px solid black;
+}
+
+@media screen and (max-width:500px) {
+    nav{
+        width: 50px;
+    }
+    
 }
