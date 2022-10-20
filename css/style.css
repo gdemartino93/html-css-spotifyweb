@@ -23,7 +23,7 @@ hr{
     border-radius: 28px;
     color: #ffffff;
     font-size: 15px;
-    padding: 15px 40px 15px 40px;
+    padding: 10px 20px 10px 20px;
     text-decoration: none;
     background:rgba(8, 11, 18, 0.7);
     border: 1px solid white;
@@ -48,6 +48,7 @@ nav{
     flex-direction: column;
     gap: 20px;
     font-weight: bold;
+    flex: 1;
 }
 .logomobile{
     width: 20px;
@@ -93,7 +94,9 @@ nav h3{
     overflow: auto;
     line-height: 30px;
     font-size: 13px;
-    max-height: 200px;
+    flex-shrink: 2;
+    flex-basis: 9px;
+    flex-grow: 1;
 }
 .newplaylist{
     color: #7A7A7A;
