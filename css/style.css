@@ -72,6 +72,16 @@ nav h3{
     gap: 5px;
     color: #7A7A7A;
 }
+/* white only home */
+.link-nav-bar > a:nth-child(1) > span:nth-child(2) {
+    color: white;
+}
+    /* ----------------------- */
+    /* white only home img */
+.link-nav-bar > a:nth-child(1) > img:nth-child(1) {
+        filter: invert(0%);
+}
+        /* ---------------------------- */
 .link-nav-bar>a:hover{
     color: white;
     font-weight: bold;
@@ -200,12 +210,17 @@ nav a:hover{
    }
    
 .bordosotto{
-    background-color: red;
-    height: 1px;
+    background-color: #CCFD5D;
+    height: 3px;
     width: 50%;
     align-self: center;
     display: none;
 }
+/* fisso al primo */
+.explorer-nav > a:nth-child(1) > div:nth-child(1) {
+    display: block;
+}
+/* fisso al primo end */
 .explorer-nav>a:hover .bordosotto{
     display: block;
 
@@ -223,7 +238,7 @@ h2{
 
 .recenti:nth-child(7)  div:nth-child(1n) > img:nth-child(1n){
     border-radius: 50%;
-   }
+}
 
 
 @media screen and (max-width:700px) {
