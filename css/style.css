@@ -130,20 +130,13 @@ nav a:hover{
     font-weight: bold;
     margin-top: 10px;
 }
-#profilo>img{
+.footer-nav img{
     width: 20px;
     background-color: grey;
     border-radius: 40%;
 }
 /* NAV BAR ASIDE FINE */
-.cmd-bar{
-    width: 100%;
-    background: #282828;
-    height: 100px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-}
+
 .explorer{
     display:flex;
     width:calc(100% - 200px);
@@ -244,6 +237,142 @@ h2{
 .recenti:nth-child(7)  div:nth-child(1n) > img:nth-child(1n){
     border-radius: 50%;
 }
+.cmd-bar{
+    width: 100%;
+    background: #282828;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.container-cmd-bar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
+.cmd-bar-start{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cmd-bar-mid{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.cmd-bar-end{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    color: white;
+    font-size: 0.8rem;
+}
+.cmd-bar-start>img{
+    height: 70px;
+}
+.info-cmd-bar{
+    display: flex;
+    flex-direction: column;
+    font-size: .8rem;
+    padding-right: 30px;
+}
+/* barra musicale */
+.slidecontainer{
+    width: 80%;
+    height: 40px;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.music-bar{
+    border-radius: 2px;
+    border: 2px solid grey;
+    height: 0;
+    display: flex;
+    width: 400px;
+}
+.volume1{
+    width: 150px;
+    
+}
+
+.whitebar{
+    width: 15%;
+    height: 0;
+    border-radius: 2px;
+    position: relative;
+    bottom: 3.7px;
+    right: 2px;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    border: 2px solid white;
+}
+.whitebar>i{
+    position: relative;
+    bottom: 8px;
+    left: 10px;
+    display: none;
+}
+.whitebar:hover{
+    border: 2px lightgreen solid;
+}
+.whitebar:hover i{
+    display: block;
+}
+.riproduci{
+    width: 60%;
+    height: 40px;
+    align-self: center;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+#songtiming{
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+    font-size: 0.7rem;
+}
+#songduration{
+    color: white;
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 0.7rem;
+}
+.volumebar{
+    width: 40%;
+}
+.span1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 50px;
+    display: none;
+
+}
+.playhover>img{
+    position: relative;
+    width: 100%;
+}
+.playhover{
+    position: relative;
+}
+
+.card .playhover:hover span{
+    display: block;
+}
+.card .playhover:hover img{
+    opacity: 0.3;
+}
 
 @media screen and (max-width:960px){
 
@@ -338,10 +467,10 @@ h2{
         gap: 8px;
         height: 50px;
         flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    gap: 15px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap: 15px;
     }
     
 }
