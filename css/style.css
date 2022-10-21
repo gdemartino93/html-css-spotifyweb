@@ -154,6 +154,7 @@ nav a:hover{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 1000;
 }
 
 .container-explorer{
@@ -260,7 +261,7 @@ h2{
 .cmd-bar-mid{
     display: flex;
     flex-direction: column;
-    flex: 1;
+    width: 50%;
 }
 .cmd-bar-end{
     display: flex;
@@ -281,7 +282,7 @@ h2{
 }
 /* barra musicale */
 .slidecontainer{
-    width: 80%;
+   width: calc(50px + 10vw);
     height: 40px;
     align-self: center;
     display: flex;
@@ -293,13 +294,16 @@ h2{
     border: 2px solid grey;
     height: 0;
     display: flex;
-    width: 400px;
+    width: calc(50px + 20vw);
+    flex: 1;
 }
 .volume1{
     width: 150px;
-    
 }
-
+.ico-cmd-bar{
+    display: flex;
+    gap: 20px;
+}
 .whitebar{
     width: 15%;
     height: 0;
@@ -328,11 +332,12 @@ h2{
     width: 60%;
     height: 40px;
     align-self: center;
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: white;
     display: flex;
     gap: 30px;
     justify-content: center;
+    align-items: center;
 }
 #songtiming{
     color: white;
@@ -373,13 +378,19 @@ h2{
 .card .playhover:hover img{
     opacity: 0.3;
 }
+i.fa-regular:nth-child(3) {
+    font-size: 2rem;
+    }
+i.fa-regular:nth-child(3):hover {
+    font-size:2.5rem;
+    }
+riproduci>.fa-shuffle {
+        align-self: center;
+        }
 
 @media screen and (max-width:960px){
 
-.card{
-    /* width: calc(100% / 3 - 20px); */
-}
-}                    
+                  
 
 @media screen and (max-width:811px) {
     .card{
@@ -390,6 +401,12 @@ h2{
     }
     .explorer-nav{
         width: 100%;
+    }
+    .cmd-bar-end{
+        gap: 7px;
+    }
+    .info-cmd-bar{
+        padding-right: 0;
     }
 }
 
@@ -472,5 +489,39 @@ h2{
         align-content: center;
         gap: 15px;
     }
-    
+    .cmd-bar-start{
+        width: 20%;
+    }
+    .cmd-bar-mid{
+        width: 60%;
+    }
+    .cmd-bar-end{
+        width: 20%;
+    }
+    .riproduci>i {
+        align-self: center;
+        font-size: 0.9rem;
+        }
+    .riproduci{
+        gap: 14px;
+    }
+    .cmd-bar-start>img{
+        height: 40px;
+    }
+    .ico-cmd-bar{
+        flex-direction: column;
+        gap: 2px;
+    }
+    .volume1{
+        width: 70px;
+    }
+    .music-bar{
+        width: calc(50px + 8vw);
+    }
+    #songtiming{
+        margin-right: 6px;
+    }
+    #songduration{
+        margin-left: 3px;
+    }
 }
