@@ -252,9 +252,13 @@ h2{
     padding-top: 20px;
 }
 
-.recenti:nth-child(7)  div:nth-child(1n) > img:nth-child(1n){
+
+div.recenti:nth-child(9) > div:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
     border-radius: 50%;
-}
+    }
+    div.recenti:nth-child(9) > div:nth-child(2) > div:nth-child(1) > img:nth-child(1) {
+    border-radius: 50%;
+    }
 .cmd-bar{
     width: 100%;
     background: #282828;
